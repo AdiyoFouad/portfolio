@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 function Hero() {
   return (
-    <div className="hero bg-base-200 min-h-screen">
+    <div className="hero bg-base-200 min-h-screen pt-20">
       <div className="hero-content flex-col lg:flex-row-reverse gap-8">
         
         {/* ==== IMAGE + BOUTONS SOCIAUX ==== */}

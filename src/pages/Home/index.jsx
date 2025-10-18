@@ -2,17 +2,22 @@ import Hero from "../../components/Hero";
 import { Link } from "react-router-dom";
 import Countdown from "../../components/Countdown";
 import { DATE_STAGE, DATE_ALTERNANCE } from "../../datas/allDates";
-import { FaClock, FaCode, FaGitAlt, FaDocker } from "react-icons/fa";
+import { FaClock, FaCode, FaGitAlt, FaDocker, FaFolderOpen } from "react-icons/fa";
 import { SiAngular, SiSpringboot, SiMysql, SiPostman } from "react-icons/si";
 
+import { projectsData } from "../../datas/projectsData";
+import ProjectCard from "../../components/ProjectCard";
+
 function Home() {
+
+    const featuredProjects = projectsData.filter((project) => project.featured);
   return (
     <div className="bg-base-100 min-h-screen">
         {/* ==== HERO ==== */}
         <Hero />
 
         {/* ==== SECTION DEUX CARTES ==== */}
-        <section className="py-16 px-6 container mx-auto lg:flex gap-8">
+        <section className="py-16 px-6 container mx-auto lg:flex gap-8 bg-primary-content">
             
             {/* === CARD COUNTDOWNS === */}
             <div className="card bg-base-200 shadow-xl lg:w-1/2">
@@ -104,6 +109,31 @@ function Home() {
                 </div>
             </div>
         </section>
+
+        {/* ==== PROJETS EN VEDETTE ==== */}  
+        <section className="py-16 bg-base-100 min-h-screen">
+            <div className="container mx-auto px-6">
+                <h2 className="text-3xl font-bold text-center text-primary mb-10">
+                    Mes Projets récents
+                </h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    {featuredProjects.map((project) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                </div>
+                <div className="mt-12 text-center">
+                    <Link
+                        to="/projects"
+                        className="btn btn-primary transition-transform duration-300 hover:scale-105 rounded-lg shadow-lg"
+                    >
+                        <FaFolderOpen /> Voir tous les projets
+                    </Link>
+                </div>
+        
+            </div>
+          </section>
+          
     </div>
   );
 }

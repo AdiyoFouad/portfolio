@@ -2,7 +2,7 @@ import {Link, NavLink} from "react-router-dom";
 
 function Header() {
     return (
-        <nav className="navbar bg-base-100 shadow-sm">
+        <nav className="navbar bg-base-100 shadow-sm fixed z-30">
             <div className="flex-1">
                 <Link to="/" className="btn btn-ghost text-xl">Fouad</Link>
             </div>
