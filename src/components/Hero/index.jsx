@@ -70,7 +70,7 @@ function Hero() {
           {/* ==== BOUTONS PRINCIPAUX ==== */}
           <div className="flex flex-wrap gap-4 justify-between sm:justify-normal">
             <a
-              href="/cv.pdf"
+              href="/cv_fouad_odjouoye.pdf"
               download
               className=" btn btn-soft btn-accent transition-transform duration-500 hover:scale-110 flex items-center gap-2"
             >

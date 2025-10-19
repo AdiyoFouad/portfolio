@@ -8,7 +8,7 @@ function Header() {
             </div>
             
             <ul className="flex justify-center align-middle gap-5 mr-5 nav-links">
-                <li><NavLink to="/about">A propos</NavLink></li>
+                <li><NavLink to="/about">À propos</NavLink></li>
                 <li><NavLink to="/skills">Compétences</NavLink></li>
                 <li><NavLink to="/projects">Projects</NavLink></li>
                 <li><NavLink to="/experience">Parcours</NavLink></li>
