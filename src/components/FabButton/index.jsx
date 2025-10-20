@@ -45,7 +45,7 @@ function FabButton() {
                 </a></button>
             <button className="btn btn-lg btn-circle">
                 <a
-                href="cv.pdf"
+                href="cv_fouad_odjouoye.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                             className="transition-transform text-xl duration-500 hover:-rotate-15 hover:scale-125 "
