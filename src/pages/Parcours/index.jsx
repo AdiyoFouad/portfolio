@@ -1,5 +1,6 @@
 import { FaGraduationCap, FaBriefcase, FaEye } from "react-icons/fa";
 import { formations } from "../../datas/formations";
+import { experiences } from "../../datas/experiences";
 
 function Parcours() {
     return (
@@ -16,7 +17,7 @@ function Parcours() {
 
                 {/* === GRID DES DEUX SECTIONS === */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                    
+
                     {/* === PARCOURS ACADÉMIQUE === */}
                     <div className="bg-base-200 p-8 rounded-2xl shadow-lg">
                         <div className="flex items-center gap-3 mb-6">
@@ -29,10 +30,10 @@ function Parcours() {
                                 <li key={index}>
                                     {/* Ligne du haut (sauf pour le 1er élément) */}
                                     {index !== 0 && <hr className="bg-primary" />}
-
+ 
                                     <div className="timeline-middle">
                                         <div className="bg-primary text-white rounded-full p-2">
-                                            <FaGraduationCap className="h-4 w-4" />
+                                            <FaGraduationCap className="h-4 w-4 animate-pulse" />
                                         </div>
                                     </div>
                                     <div className="timeline-end mt-5">
@@ -68,7 +69,7 @@ function Parcours() {
                                                             rel="noopener noreferrer"
                                                             className="btn btn-xs btn-primary ml-auto"
                                                         >
-                                                             <FaEye />
+                                                            <FaEye />
                                                         </a>
                                                     )}
                                                 </div>
@@ -89,6 +90,46 @@ function Parcours() {
                             <FaBriefcase className="text-3xl text-primary" />
                             <h3 className="text-2xl font-semibold">Parcours professionnel</h3>
                         </div>
+
+                        <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
+                            {experiences.map((exp, index) => (
+                                <li key={index}>
+                                    {/* Ligne du haut (sauf pour le premier élément) */}
+                                    {index !== 0 && <hr className="bg-primary" />}
+
+                                    {/* Icône */}
+                                    <div className="timeline-middle">
+                                        <div className="bg-primary text-white rounded-full p-2">
+                                            <FaBriefcase className="h-4 w-4 animate-pulse" />
+                                        </div>
+                                    </div>
+
+                                    {/* Contenu */}
+                                    <div className="timeline-end mt-5 w-full">
+                                        <time className="font-black font-mono">{exp.date}</time>
+                                        <div className="card bg-primary-content shadow-md mt-2">
+                                            <div className="card-body">
+                                                {/* Titre et entreprise */}
+                                                <h4 className="card-title text-lg font-bold text-primary">
+                                                    {exp.title}
+                                                </h4>
+                                                <p className="text-sm italic text-gray-700">{exp.company}</p>
+
+                                                {/* Liste des tâches */}
+                                                <ul className="list-disc list-inside text-xs leading-relaxed mt-2 space-y-1">
+                                                    {exp.tasks.map((task, i) => (
+                                                        <li key={i}>{task}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Ligne du bas */}
+                                    <hr className="bg-primary" />
+                                </li>
+                            ))}
+                        </ul>
                     </div>
 
                 </div>

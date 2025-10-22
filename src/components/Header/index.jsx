@@ -16,7 +16,7 @@ function Header() {
                 <li>
                     <label className="swap swap-rotate">
                         {/* this hidden checkbox controls the state */}
-                        <input type="checkbox" className="theme-controller" value="halloween" />
+                        <input type="checkbox" className="theme-controller" value="night" />
 
                         {/* sun icon */}
                         <svg
