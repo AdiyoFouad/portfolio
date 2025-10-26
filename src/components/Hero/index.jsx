@@ -81,7 +81,7 @@ function Hero() {
                 <FaFolderOpen /> Voir mes projets
               </button>
             </Link>
-            <Link to="/contacts" className="w-full sm:w-auto">
+            <Link to="/contact" className="w-full sm:w-auto">
               <button className=" w-full sm:w-auto btn btn-soft btn-outline transition-transform duration-500 hover:scale-110 flex items-center gap-2">
                 <FaEnvelope /> Me contacter
               </button>
