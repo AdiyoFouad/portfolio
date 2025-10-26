@@ -34,9 +34,9 @@ function Contact() {
   };
 
   return (
-    <section className="py-20 bg-base-100 min-h-screen">
-      <h2 className="text-4xl font-bold text-primary text-center mb-6">Me contacter 📬</h2>
-          <p className="text-gray-700 text-center mb-8">
+    <section className="container mx-auto px-4 py-20 min-h-screen">
+      <h2 className="text-3xl font-bold text-primary mb-4 text-center">Me contacter</h2>
+          <p className="text-gray-700 text-center mb-10">
             Vous souhaitez collaborer, proposer une alternance ou simplement échanger ?  
             N'hésitez pas à me contacter via le formulaire ou les coordonnées ci-dessous.
           </p>
@@ -45,30 +45,30 @@ function Contact() {
         {/* === INFOS DE CONTACT === */}
         <div>
 
-          <div className="space-y-4 text-gray-700">
+          <div className="space-y-4">
             <div className="flex items-center gap-3">
               <FaEnvelope className="text-primary text-xl" />
-              <a href="mailto:adiyofouad@example.com" className="hover:text-primary">
-                adiyofouad@example.com
+              <a href="mailto:fouad.odjouoye@etudiant.univ-rennes.fr" className="hover:text-primary">
+                fouad.odjouoye@etudiant.univ-rennes.fr
               </a>
             </div>
 
             <div className="flex items-center gap-3">
               <FaPhoneAlt className="text-primary text-xl" />
-              <a href="tel:+33612345678" className="hover:text-primary">
-                +33 6 12 34 56 78
+              <a href="tel:+33787151303" className="hover:text-primary">
+                +33 7 87 15 13 03
               </a>
             </div>
 
             <div className="flex items-center gap-3">
               <FaLinkedin className="text-primary text-xl" />
               <a
-                href="https://www.linkedin.com/in/adiyofouad"
+                href="https://linkedin.com/in/adiyo-fouad-odjouoye"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
-                linkedin.com/in/adiyofouad
+                linkedin.com/in/adiyo-fouad-odjouoye
               </a>
             </div>
 
@@ -88,7 +88,7 @@ function Contact() {
 
         {/* === FORMULAIRE DE CONTACT === */}
         <div className="bg-base-200 p-8 rounded-2xl shadow-lg">
-          <h3 className="text-2xl font-semibold mb-6 text-primary">Envoyez-moi un message ✉️</h3>
+          <h3 className="text-2xl font-semibold mb-6 text-primary">Envoyez-moi un message</h3>
           <form ref={formRef} onSubmit={sendEmail} className="space-y-5">
             <div>
               <label className="block text-sm font-medium mb-2">Nom complet *</label>

@@ -2934,6 +2934,16 @@
       --timeline-row-start: minmax(0, 1fr);
     }
   }
+  .hover\:scale-75 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 75%;
+        --tw-scale-y: 75%;
+        --tw-scale-z: 75%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:scale-105 {
     &:hover {
       @media (hover: hover) {
@@ -2968,6 +2978,14 @@
     &:hover {
       @media (hover: hover) {
         rotate: calc(15deg * -1);
+      }
+    }
+  }
+  .hover\:text-2xl {
+    &:hover {
+      @media (hover: hover) {
+        font-size: var(--text-2xl);
+        line-height: var(--tw-leading, var(--text-2xl--line-height));
       }
     }
   }

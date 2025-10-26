@@ -81,7 +81,7 @@ function Header() {
                             <li><NavLink to="/skills">Compétences</NavLink></li>
                             <li><NavLink to="/projects">Projects</NavLink></li>
                             <li><NavLink to="/experience">Parcours</NavLink></li>
-                            <li><NavLink to="/contacts">Contact</NavLink></li>
+                            <li><NavLink to="/contact">Contact</NavLink></li>
                         </ul>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ function Skills() {
                 Mes Compétences
             </h2>
             <p className="text-center text-gray-600 mb-10">
-                Ensemble des technologies et outils que j’ai maîtrisés au fil de mes projets et de ma formation.
+                Ensemble des technologies et outils que j'ai maîtrisés au fil de mes projets et de ma formation.
             </p>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

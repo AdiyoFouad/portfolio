@@ -54,7 +54,7 @@ function Parcours() {
                                                     </p>
                                                 )}
 
-                                                {/* Mention + Lien d’attestation */}
+                                                {/* Mention + Lien d'attestation */}
                                                 <div className="flex justify-between items-center">
                                                     {item.mention && (
                                                         <span className="text-xs font-semibold text-gray-700">

@@ -30,7 +30,7 @@ export const skills = [
   {
     category: "Frameworks & Bibliothèques",
     icon: FaProjectDiagram,
-    description: "Création d’applications performantes et responsives.",
+    description: "Création d'applications performantes et responsives.",
     techs: [
       { name: "ReactJS", icon: FaReact, color: "text-cyan-400" },
       { name: "Angular", icon: FaAngular, color: "text-red-500" },
@@ -44,7 +44,7 @@ export const skills = [
   {
     category: "Bases de données & DevOps",
     icon: FaDatabase,
-    description: "Gestion, versioning et déploiement d’applications web et mobiles.",
+    description: "Gestion, versioning et déploiement d'applications web et mobiles.",
     techs: [
       { name: "MySQL", icon: SiMysql, color: "text-blue-600" },
       { name: "PostgreSQL", icon: SiPostgresql, color: "text-sky-700" },
@@ -80,7 +80,7 @@ export const skills = [
   {
     category: "Développement Mobile",
     icon: FaMobileAlt,
-    description: "Création d’applications mobiles modernes et performantes.",
+    description: "Création d'applications mobiles modernes et performantes.",
     techs: [
       { name: "Dart", icon: SiDart, color: "text-blue-500" },
       { name: "Flutter", icon: SiFlutter, color: "text-blue-400" },
