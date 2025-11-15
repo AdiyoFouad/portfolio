@@ -5,7 +5,7 @@ export const projectsData = [
     id: 1,
     title: "CocktailGenius",
     description: "CocktailGenius est une application web conviviale dédiée aux passionnés de cocktails, permettant de découvrir, partager et créer des recettes uniques. Que vous soyez novice ou mixologue confirmé, explorez une large collection de recettes et partagez vos créations avec la communauté.",
-    image: "/img/projects/image.png",
+    image: "/img/Projects/image.png",
     github: "https://github.com/AdiyoFouad/CocktailGenius",
     demo: "#",
     techs: [
@@ -25,7 +25,7 @@ export const projectsData = [
     title: "LifeBoard",
     description:
     "LifeBoard est une application web personnelle développée avec Angular pour vous aider à gérer vos tâches, suivre votre budget et monitorer vos habitudes quotidiennes via un tableau de bord moderne et responsive.",
-    image: "/img/projects/image.png",
+    image: "/img/Projects/image.png",
     github: "https://github.com/ton-repo/LifeBoard",
     demo: "#",
     techs: [
@@ -44,7 +44,7 @@ export const projectsData = [
     title: "Gestion de parc informatique",
     description:
       "Application PHP/MySQL pour gérer le matériel informatique d'une entreprise (PC, imprimantes, licences).",
-    image: "/img/projects/image.png",
+    image: "/img/Projects/image.png",
     github: "https://github.com/AdiyoFouad/parc-info",
     demo: null,
     techs: [
@@ -60,7 +60,7 @@ export const projectsData = [
     title: "Gestion de bons provisoires",
     description:
       "Application PHP pour la création et le suivi de bons provisoires avec authentification et export PDF.",
-    image: "/img/projects/image.png",
+    image: "/img/Projects/image.png",
     github: "https://github.com/AdiyoFouad/bon-provisoire",
     demo: "#",
     techs: [
