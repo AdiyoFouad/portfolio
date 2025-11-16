@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaVideo} from "react-icons/fa";
 
 function ProjectCard({ project }) {
   return (
@@ -7,11 +7,11 @@ function ProjectCard({ project }) {
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-48 lg:grayscale-50 lg:hover:grayscale-0 object-cover hover:scale-110 transition-transform duration-500"
+          className="w-full h-50 lg:grayscale-50 lg:hover:grayscale-0 object-cover hover:scale-110 transition-transform duration-500"
         />
       </figure>
 
-      <div className="card-body">
+      <div className="card-body text-sm">
         <h3 className="card-title text-lg">{project.title}</h3>
         <p className="text-sm text-gray-600">{project.description}</p>
 
@@ -22,7 +22,7 @@ function ProjectCard({ project }) {
               return (
                 <span
                   key={i}
-                  className="flex items-center gap-2 bg-base-100 px-3 py-1 rounded-full shadow-sm text-sm"
+                  className="flex items-center gap-2 bg-base-100 px-3 py-1 rounded-full shadow-sm text-xs"
                 >
                   <Icon className={tech.color} />
                   {tech.name}
@@ -47,9 +47,20 @@ function ProjectCard({ project }) {
               href={project.demo}
               target="_blank"
               rel="noreferrer"
-              className="btn btn-sm btn-primary flex items-center gap-2 transition-transform duration-300 hover:scale-105"
+              className="btn btn-sm btn-outline btn-primary flex items-center gap-2 transition-transform duration-300 hover:scale-105"
             >
-              <FaExternalLinkAlt /> Démo
+              <FaVideo /> Démo
+            </a>)
+            
+          }
+
+          { project.live && (<a
+              href={project.live}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-sm btn-primary flex items-center gap-2 transition-transform duration-300 hover:scale-105 flex-1"
+            >
+              <FaExternalLinkAlt /> Live
             </a>)
             
           }
