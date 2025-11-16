@@ -19,7 +19,11 @@ export const projectsData = [
     id: 2,
     title: "CocktailGenius",
     description: "CocktailGenius est une application web conviviale dédiée aux passionnés de cocktails, permettant de découvrir, partager et créer des recettes uniques. Que vous soyez novice ou mixologue confirmé, explorez une large collection de recettes et partagez vos créations avec la communauté.",
+<<<<<<< HEAD
     image: "/img/Projects/cocktailgenius.png",
+=======
+    image: "/img/Projects/image.png",
+>>>>>>> 890c9c9e947a2495f3eedda1ec494c9d9adadf68
     github: "https://github.com/AdiyoFouad/CocktailGenius",
     demo: "https://drive.google.com/file/d/1cKks3i7G39XPTBs2pIFNv3ebFbaDbcsI/view?usp=drive_link",
     live:"https://cocktailgenius.onrender.com",
@@ -40,10 +44,16 @@ export const projectsData = [
     title: "LifeBoard",
     description:
     "LifeBoard est une application web personnelle développée avec Angular pour vous aider à gérer vos tâches, suivre votre budget et monitorer vos habitudes quotidiennes via un tableau de bord moderne et responsive.",
+<<<<<<< HEAD
     image: "/img/Projects/lifeboard.png",
     github: "https://github.com/AdiyoFouad/LifeBoard",
     demo: "https://drive.google.com/file/d/1rgQrRhQtuDmKZzOuSlqIhMKPJJksilol/view?usp=drive_link",
     live: "https://lifeboard-3in1.vercel.app/",
+=======
+    image: "/img/Projects/image.png",
+    github: "https://github.com/ton-repo/LifeBoard",
+    demo: "#",
+>>>>>>> 890c9c9e947a2495f3eedda1ec494c9d9adadf68
     techs: [
       { name: "Angular", icon: SiAngular, color: "text-red-600" },
       { name: "Chart.js", icon: SiChartdotjs, color: "text-pink-500" },
@@ -116,6 +126,12 @@ export const projectsData = [
       { name: "HTML", icon: FaHtml5, color: "text-orange-500" },
       { name: "CSS", icon: FaCss3Alt, color: "text-blue-500" },
     ],
+<<<<<<< HEAD
     featured: false,
   },*/
 ];
+=======
+    featured: true,
+  },
+];
+>>>>>>> 890c9c9e947a2495f3eedda1ec494c9d9adadf68
