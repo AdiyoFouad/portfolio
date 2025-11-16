@@ -1,5 +1,5 @@
-import { FaReact, FaPython, FaPhp, FaDatabase, FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaMagic} from "react-icons/fa";
-import { SiBootstrap, SiJavascript, SiFlask, SiMysql,SiPostgresql, SiChartdotjs, SiAngular, SiTypescript } from "react-icons/si";
+import { FaReact, FaPython, FaDatabase, FaHtml5, FaCss3Alt, FaGitAlt, FaJsSquare, FaMagic} from "react-icons/fa";
+import { SiBootstrap, SiJavascript, SiFlask,SiPostgresql, SiChartdotjs, SiAngular, SiTypescript } from "react-icons/si";
 export const projectsData = [
   {
     id: 1,
@@ -72,19 +72,19 @@ export const projectsData = [
     featured: true
   },
   {
-    id: 4,
+    id: 5,
     title: "Serpent",
     description: "Serpent est un mini-jeu développé en JavaScript avec une interface simple et un gameplay addictif. Le joueur contrôle un serpent qui doit manger des objets pour grandir tout en évitant de se heurter à ses propres segments. Le jeu offre une expérience classique et fun.",
-    image: "/img/projects/serpent.png", 
+    image: "/img/Projects/serpent.png", 
     github: "https://github.com/AdiyoFouad/Serpent",
-    demo: "#", 
+    demo: "https://serpent-five.vercel.app/", 
     live: "https://serpent-five.vercel.app/", 
     techs: [
       { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
       { name: "HTML5", icon: FaHtml5, color: "text-orange-500" },
       { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" },
     ],
-    featured: true
+    featured: false
   }/*,
   {
     id: 4,
